@@ -15,6 +15,11 @@ export class AppComponent {
     this.todoDataService = todoDataService;
   }
 
+  onAddTodo(value) {
+    this.todoDataService.addTodo(value);
+    this.newTodo = new Todo();
+  }
+
   addTodo() {
     this.todoDataService.addTodo(this.newTodo);
     this.newTodo = new Todo();
