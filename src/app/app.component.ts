@@ -3,7 +3,7 @@ import {Todo} from './todo';
 import {TodoDataService} from './todo-data.service';
 
 @Component({
-  providers: [TodoDataService],
+  providers: [],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
